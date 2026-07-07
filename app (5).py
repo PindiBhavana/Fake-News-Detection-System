@@ -20,6 +20,7 @@ if st.button("Predict"):
         prob = model.predict_proba(X).max() * 100
 
         if pred == "REAL":
+            st.balloons()
             st.success("Prediction: REAL")
         else:
             st.error("Prediction: FAKE")
